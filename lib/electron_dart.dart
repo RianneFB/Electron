@@ -1,12 +1,18 @@
 
-enum Spin {
-  up,
-  down
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void displayInfo() {
+    print('Name: $name');
+    print('Age: $age');
+  }
 }
 
-class Electron {
-  int id;
-  static const num = 9.109e-28;
-  Spin _spin;
-  Electron? _entangledElectron;
+void main() {
+  Person person1 = Person("Rianne", 15);
+  person1.displayInfo();
 }
